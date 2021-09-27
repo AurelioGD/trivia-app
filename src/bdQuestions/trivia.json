@@ -1,0 +1,56 @@
+[
+    {
+        "question":"¿De qué película es el príncipe azul?",
+        "answers":["Cenicienta","Sirenita","Bella Durmiente","Mulán"],
+        "correctAnswer":0
+    },
+    {
+        "question":"¿De qué país vino Justin Biber?",
+        "answers":["Canadá","USA","Francia","Inglaterra"],
+        "correctAnswer":0
+    },
+    {
+        "question":"¿Qué película navideña incluye un cameo de Donald Trump?",
+        "answers":["Solo en casa","Solo en casa 2:Perdido en Nueva York","Richie Rich","Una pandilla de pillos"],
+        "correctAnswer":1
+    },
+    {
+        "question":"¿Qué dibujito animado vive en una piña debajo del mar?",
+        "answers":["Flounder","Nemo","Rick and Morty","Bob Esponja"],
+        "correctAnswer":3
+    },
+    {
+        "question":"¿Cuál es el animal nacional de Escocia?",
+        "answers":["Caballo","Unicornio","Lobo","Vaca"],
+        "correctAnswer":1
+    },
+    {
+        "question":"¿Qué novela famosa contó con Jo, Meg, Beth y Amy March?",
+        "answers":["Matar a un ruiseñor","Tom Sawyer","Mujercitas","Moby Dick"],
+        "correctAnswer":2
+    },
+    {
+        "question":"¿Qué país produce más café en el mundo?",
+        "answers":["Colombia","Indonesia","Brasil","Vietnam"],
+        "correctAnswer":2
+    },
+    {
+        "question":"¿Cuáles son los nombres de las cuatro casas de Hogwarts?",
+        "answers":["Gryffindor, Ravenclaw, Hufflepuff y Slytherin","Gryffin, Cuervo, Elefante y Serpiente","Norte, Este, Oeste y Sur","Rojo, azul, verde y naranja"],
+        "correctAnswer":0
+    },
+    {
+        "question":"¿A qué sabe el Cointreau?",
+        "answers":["Albahaca","Limón","vainilla","Naranja"],
+        "correctAnswer":3
+    },
+    {
+        "question":"¿Cuál es el apodo de la campana del reloj en el Palacio de Westminster en Londres?",
+        "answers":["Big Ben","El armadillo","La calabaza","La momia"],
+        "correctAnswer":0
+    }
+]
+
+
+
+

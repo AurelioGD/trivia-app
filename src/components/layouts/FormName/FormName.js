@@ -15,7 +15,7 @@ const FormName = () => {
     const handlerForm = (e) => {
         e.preventDefault()
         setAppState({...appState,nameUser:name})
-        history.push("/question")
+        history.push("/questions")
     }
 
     return (

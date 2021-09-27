@@ -3,14 +3,20 @@ import StateAppContext from "../../../context/StateAppContext"
 import { QuestionContainer, Question, AnswaresContainer, FlexContainer } from "./QuestionLayout.styles"
 import allQuestions from "../../../bdQuestions/trivia.json"
 import ButtonQuestion from "../../common/ButtonQuestion/ButtonQuestion"
+import { Redirect } from 'react-router'
 const QuestionLayout = () => {
 
-    const {appState,setAppState} = useContext(StateAppContext)
-    const { answers, question } = allQuestions[appState.counterQuestion]
+    const { appState } = useContext(StateAppContext)
+
+    const { counterQuestion } = appState;
+
+    if(!allQuestions[counterQuestion]) return (<Redirect to="/results"/>)
+
+    const { answers, question } = allQuestions[counterQuestion]
     
     return (
         <QuestionContainer>
-            <Question>{question}</Question>
+            <Question>{`${counterQuestion+1}. ${question}`}</Question>
             <AnswaresContainer>
                 <FlexContainer>
                     <ButtonQuestion index={0}>{answers[0]}</ButtonQuestion> 

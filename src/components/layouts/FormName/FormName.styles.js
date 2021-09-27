@@ -33,5 +33,9 @@ const InputSubmit = styled.input`
     border-radius: 0.5rem;
     background-color: #424242;
     color: #fff;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.9;
+    }
 `
 export { FormContainer, Form, Input, InputSubmit }

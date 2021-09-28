@@ -1,12 +1,10 @@
 import { ButtonAgain, ResultsContainer, ScoreContainer, ScoreResult, Title } from "./Results.styles"
 import { useContext } from "react"
-import { useHistory } from "react-router-dom"
 import StateAppContext from "../../../context/StateAppContext"
 import calculateScore from "./utils/calculateScore"
 import allQuestions from "../../../bdQuestions/trivia.json"
 const Results = () => {
     
-    const history = useHistory()
     const { appState, setAppState } = useContext(StateAppContext)
     
     const allAnswares = appState.counterAnswares;

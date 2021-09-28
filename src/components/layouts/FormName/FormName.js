@@ -6,15 +6,15 @@ import { useHistory } from 'react-router'
 
 const FormName = () => {
     const [name, setName] = useState("")
-    const { appState,setAppState } = useContext(StateAppContext)
+    const { dispatch } = useContext(StateAppContext)
     const history = useHistory();
     const handlerChange = (e) => {
         setName(e.target.value)
     }
-
+ 
     const handlerForm = (e) => {
         e.preventDefault()
-        setAppState({...appState,nameUser:name})
+        dispatch({type:"CHANGE_NAME", payload:{name}})
         history.push("/questions")
     }
 

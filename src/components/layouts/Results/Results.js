@@ -5,7 +5,7 @@ import calculateScore from "./utils/calculateScore"
 import allQuestions from "../../../bdQuestions/trivia.json"
 const Results = () => {
     
-    const { appState, setAppState } = useContext(StateAppContext)
+    const { appState, dispatch } = useContext(StateAppContext)
     
     const allAnswares = appState.counterAnswares;
     const correctAnswares = allQuestions.map(question => question.correctAnswer)
@@ -13,11 +13,7 @@ const Results = () => {
     const score = calculateScore(allAnswares,correctAnswares)
 
     const handlerButtonBack = () => {
-        setAppState({
-            nameUser: null,
-            counterQuestion: 0,
-            counterAnswares: []
-        })
+        dispatch({type:"RESET_STATE"})
     }
 
 

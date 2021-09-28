@@ -2,12 +2,10 @@ import { Button } from "./ButtonQuestion.style"
 import React,{ useContext } from 'react'
 import StateAppContext from "../../../context/StateAppContext"
 const ButtonQuestion = ({children, index}) => {
-    const { appState, setAppState } = useContext(StateAppContext) 
+    const { dispatch } = useContext(StateAppContext) 
     const handlerClickCheckAnsware = () => {
-        const { counterAnswares } = appState;
-        const newCounterAnswares = [...counterAnswares, index];
-        setAppState({...appState,counterAnswares:newCounterAnswares,counterQuestion:appState.counterQuestion+1}) 
-
+        dispatch({type:"SAVE_ANSWARE", payload:{index}})
+        dispatch({type:"INCREMENT_COUNTER_QUESTION"}) 
     }
     return (
         <Button onClick={handlerClickCheckAnsware}>
